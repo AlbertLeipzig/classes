@@ -5,10 +5,54 @@ class Person {
     this.lastName = lastName;
     this.email = email;
   }
+
+  get _mail() {
+    return this.email;
+  }
+  set _mail(newEmail) {
+    this.email = newEmail;
+  }
   updateEmail(newEmail) {
     this.email = newEmail;
   }
+  get printEmail() {
+    console.log(this.email);
+  }
+
+  set formattedName(name) {
+    firstName = name.trim().toLowerCase();
+  }
 }
+
+const printUser = (user) => console.log(user);
+
+const person1 = new Person('alskdja', 'Anna', 'Fuchs', 'asdlkjh@mail.com');
+
+console.count();
+person1.printEmail;
+
+console.count();
+person1.updateEmail('newemail@mail.com');
+person1.printEmail;
+
+person1._mail = 'secondmakil@mail.com';
+console.count();
+person1.printEmail;
+
+/*
+const person2 = {
+    first_name : "Berta",
+    lastName : "Schäffer",
+    address : {
+        street : "Main Street",
+        number : 456,
+        city : "Frankfurt"
+    }
+} */
+
+/* person2.address.street */
+
+/* person1.address.split("|") */
 
 // musician, ""
 
@@ -33,11 +77,9 @@ const firstMusician = new Musician(
   ['funk'],
   ['ma@soundclong.com']
 );
-console.log(firstMusician);
+/* console.log(firstMusician);
 firstMusician.updateEmail('newEmail@mail.com');
-console.log(firstMusician);
-
-// subscriber
+console.log(firstMusician) */ // subscriber
 
 class Subscriber extends Person {
   constructor(age, gender, occupied, address) {

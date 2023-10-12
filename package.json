@@ -1,0 +1,23 @@
+{
+  "name": "classes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertLeipzig/classes.git"
+  },
+  "keywords": [],
+  "author": "albertleipzig <albertclemvill@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/AlbertLeipzig/classes/issues"
+  },
+  "homepage": "https://github.com/AlbertLeipzig/classes#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
